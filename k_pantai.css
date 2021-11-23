@@ -1,5 +1,17 @@
+p {
+  font-size: 14px;
+  font-family: "Times New Roman";
+}
+
 .lokasi {
   text-align: left;
+}
+
+.namaWisata {
+  text-align: left;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Verdana;
 }
 
 .gambar {
@@ -7,4 +19,9 @@
   height: 200px;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
+}
+
+#loc {
+  width: 11px;
+  height: 18px;
 }
