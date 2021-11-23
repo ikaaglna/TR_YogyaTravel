@@ -1,0 +1,10 @@
+.lokasi {
+  text-align: left;
+}
+
+.gambar {
+  width: 286px;
+  height: 200px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
