@@ -1,0 +1,57 @@
+p {
+  font-size: 14px;
+  font-family: "Times New Roman";
+}
+
+.paket {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  border-radius: 3px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0, 0.7);
+  font-family: Verdana;
+  font-size: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+.overlayBlur {
+  backdrop-filter: blur(5px);
+  /* background-image: url(images/pantai/P.Parangtritis.jpg);*/
+}
+.overlay:hover {
+  opacity: 1;
+}
+
+.overlay p {
+  font-family: "Times New Roman";
+  font-size: 14px;
+}
+
+.namaWisata {
+  font-size: 20px;
+  font-family: Verdana;
+}
+
+.gambar {
+  width: 286px;
+  height: 200px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  position: relative;
+}
+
+#loc {
+  width: 11px;
+  height: 18px;
+}
