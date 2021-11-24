@@ -21,7 +21,7 @@
 }
 
 .overlayBlur {
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(3px);
   /* background-image: url(images/pantai/P.Parangtritis.jpg);*/
 }
 .overlay:hover {
