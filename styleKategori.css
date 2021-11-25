@@ -55,3 +55,38 @@ p {
   width: 11px;
   height: 18px;
 }
+
+.banner-image1 {
+  /* background-image: url(img/gambar/gambar1.jpg); */
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url(images/pantai/P.WediOmbo.jpg);
+  background-size: cover;
+}
+
+.banner-image2 {
+  /* background-image: url(img/gambar/gambar1.jpg); */
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url(images/candi/CANDI.jpg);
+  background-size: cover;
+}
+
+.judul {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 69px;
+  /* identical to box height */
+  background: -webkit-linear-gradient(
+    rgb(255, 255, 255),
+    rgba(255, 255, 255, 0)
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.kategori {
+  font-family: Verdana;
+  text-align: center;
+  font-weight: bold;
+}

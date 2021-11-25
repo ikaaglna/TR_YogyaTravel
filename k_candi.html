@@ -13,12 +13,54 @@
 
 <body>
 
-    <br><br><br><br>
-    <h1>Candi</h1>
-    
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-d">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="img/logo.png" alt="" height="30" />
+      </a>
+      <a href="#" class="navbar-brand">YogyaTravel</a>
+      <button type="button" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="mx-auto"></div>
+        <ul class="ultext navbar-nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white">Beranda</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Kategori</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Wisata</a></li>
+              <li><a class="dropdown-item" href="#">Kuliner</a></li>
+              <li><a class="dropdown-item" href="#">Hotel</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white">Tentang</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Akhir Navbar -->
+
+  <!-- Slide -->
+  <div class="banner-image2 w-100 vh-100 d-flex justify-content-center align-items-center">
+    <div class="content text-center">
+      <h1 class="judul">WISATA</h1>
+    </div>
+  </div>
+  <!-- Akhir Slide -->
+
+  <br><br>
+  <h2 class="kategori">Candi</h2>
     <div class="container">
       <hr class="align-items-center" width="">
     </div>
+    <br><br>
     
 
     <div class="container" align="center">
@@ -346,6 +388,18 @@
       
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <script>
+      var nav = document.querySelector('nav');
+
+      window.addEventListener('scroll', function () {
+        if (window.pageYOffset > 100) {
+          nav.classList.add('bg-dark', 'shadow');
+        } else {
+          nav.classList.remove('bg-dark', 'shadow');
+        }
+      });
+    </script>
 </body>
 
 </html>
