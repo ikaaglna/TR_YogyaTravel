@@ -1,61 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="styleKategori.css">
-</head>
+    <title>Yogya Travel</title>
 
-<body>
+    <link rel="stylesheet" type="text/css" href=styleKategori.css>
+    
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-d">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" alt="" height="30" />
+        </a>
+        <a href="#" class="navbar-brand">YogyaTravel</a>
+        <button type="button" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-  <!-- Navbar -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-d">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="img/logo.png" alt="" height="30" />
-      </a>
-      <a href="#" class="navbar-brand">YogyaTravel</a>
-      <button type="button" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mx-auto"></div>
+          <ul class="ultext navbar-nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white">Beranda</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Kategori</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="kategori.html">Wisata</a></li>
+                <li><a class="dropdown-item" href="#">Kuliner</a></li>
+                <li><a class="dropdown-item" href="#">Hotel</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white">Tentang</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
 
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <div class="mx-auto"></div>
-        <ul class="ultext navbar-nav">
-          <li class="nav-item">
-            <a href="#" class="nav-link text-white">Beranda</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Kategori</a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Wisata</a></li>
-              <li><a class="dropdown-item" href="#">Kuliner</a></li>
-              <li><a class="dropdown-item" href="#">Hotel</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link text-white">Tentang</a>
-          </li>
-        </ul>
+    <!-- Slide -->
+    <div class="banner-image2 w-100 vh-100 d-flex justify-content-center align-items-center">
+      <div class="content text-center">
+        <h1 class="judul">CANDI</h1>
       </div>
     </div>
-  </nav>
-  <!-- Akhir Navbar -->
+    <!-- Akhir Slide -->
 
-  <!-- Slide -->
-  <div class="banner-image2 w-100 vh-100 d-flex justify-content-center align-items-center">
-    <div class="content text-center">
-      <h1 class="judul">WISATA</h1>
-    </div>
-  </div>
-  <!-- Akhir Slide -->
-
-  <br><br>
+ 
+    <br><br>
   <h2 class="kategori">Candi</h2>
     <div class="container">
       <hr class="align-items-center" width="">
@@ -376,18 +377,10 @@
 
     
     <br><br><br>
+ 
 
-
-
-
-
-
-
-  
-
-      
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- Js Bootsrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <script>
       var nav = document.querySelector('nav');
@@ -400,6 +393,5 @@
         }
       });
     </script>
-</body>
-
+  </body>
 </html>
