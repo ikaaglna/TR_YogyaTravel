@@ -1,0 +1,92 @@
+p {
+  font-size: 14px;
+  font-family: "Times New Roman";
+}
+
+.paket {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  border-radius: 3px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0, 0.7);
+  font-family: Verdana;
+  font-size: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+.overlayBlur {
+  backdrop-filter: blur(5px);
+  /* background-image: url(images/pantai/P.Parangtritis.jpg);*/
+}
+.overlay:hover {
+  opacity: 1;
+}
+
+.overlay p {
+  font-family: "Times New Roman";
+  font-size: 14px;
+}
+
+.namaWisata {
+  font-size: 20px;
+  font-family: Verdana;
+}
+
+.gambar {
+  width: 286px;
+  height: 200px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  position: relative;
+}
+
+#loc {
+  width: 11px;
+  height: 18px;
+}
+
+.banner-image1 {
+  /* background-image: url(img/gambar/gambar1.jpg); */
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url(images/pantai/P.WediOmbo.jpg);
+  background-size: cover;
+}
+
+.banner-image2 {
+  /* background-image: url(img/gambar/gambar1.jpg); */
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url(images/candi/CANDI.jpg);
+  background-size: cover;
+}
+
+.judul {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 69px;
+  /* identical to box height */
+  background: -webkit-linear-gradient(
+    rgb(255, 255, 255),
+    rgba(255, 255, 255, 0)
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.kategori {
+  font-family: Verdana;
+  text-align: center;
+  font-weight: bold;
+}
