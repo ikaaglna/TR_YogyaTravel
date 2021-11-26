@@ -1,0 +1,34 @@
+.banner-image {
+    /* background-image: url(img/gambar/gambar1.jpg); */
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(TR_img/Gudeg.jpg);
+    background-size: cover;
+  }
+
+  .judul {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 69px;
+    /* identical to box height */
+    background: -webkit-linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+  }
+
+  .kolom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+  }
