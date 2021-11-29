@@ -70,6 +70,20 @@ p {
   background-size: cover;
 }
 
+.banner-image3 {
+  /* background-image: url(img/gambar/gambar1.jpg); */
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url(images/Gunung/merapi2.jpg);
+  background-size: cover;
+}
+
+.banner-image4 {
+  /* background-image: url(img/gambar/gambar1.jpg); */
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url(images/candi/C.Plaosan.png);
+  background-size: cover;
+}
+
 .judul {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
@@ -89,4 +103,11 @@ p {
   font-family: Verdana;
   text-align: center;
   font-weight: bold;
+}
+
+.kategori-tentang {
+  font-family: Verdana;
+  text-align: center;
+  font-weight: normal;
+  font-size: medium;
 }
