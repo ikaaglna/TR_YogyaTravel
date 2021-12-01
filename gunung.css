@@ -1,0 +1,44 @@
+* {
+    font-family: Verdana;
+  }
+  
+  .banner-image1 {
+    /* background-image: url(img/gambar/gambar1.jpg); */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(images/Gunung/merapi2.jpg);
+    background-size: cover;
+  }
+  
+  .banner-image2 {
+    /* background-image: url(img/gambar/gambar1.jpg); */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(images/Gunung/gunung-api-purba.jpg);
+    background-size: cover;
+  }
+  .banner-image3 {
+    /* background-image: url(img/gambar/gambar1.jpg); */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(images/Gunung/becici.jpg);
+    background-size: cover;
+  }
+  
+  
+  .judul {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 40px;
+    /* identical to box height */
+    background: -webkit-linear-gradient(
+      rgb(255, 255, 255),
+      rgba(255, 255, 255, 0)
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  
+  #loc {
+    width: 11px;
+    height: 18px;
+  }
+  
