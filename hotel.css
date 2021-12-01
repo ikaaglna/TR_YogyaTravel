@@ -1,4 +1,4 @@
-* {
+.huruf {
   font-family: Verdana;
 }
 
@@ -69,8 +69,9 @@
 }
 
 .btn {
-  width: 100px;
-  height: 35px;
+  width: 125px;
+  height: 40px;
+  padding-top: 9px;
   background: #391e00;
   border-radius: 20px;
   font-size: 14px;
@@ -88,4 +89,14 @@
 #loc {
   width: 11px;
   height: 18px;
+}
+.bulat {
+  border-radius: 10px;
+  height: 35px;
+  width: 200px;
+  padding-left: 10px;
+}
+
+.ikonnya {
+  padding-left: 180px;
 }
