@@ -1,20 +1,20 @@
 .banner-image1 {
   /* background-image: url(img/gambar/gambar1.jpg); */
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(images/candi/C.Prambanan.jpg);
+    url(images/pantai/P.Parangtritis.jpg);
   background-size: cover;
 }
 
 .banner-image2 {
   /* background-image: url(img/gambar/gambar1.jpg); */
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(images/candi/C.Plaosan.png);
+    url(images/pantai/P.Timang.jpg);
   background-size: cover;
 }
 .banner-image3 {
   /* background-image: url(img/gambar/gambar1.jpg); */
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(images/candi/C.Borobudur.png);
+    url(images/pantai/P.WatuLumbung.jpg);
   background-size: cover;
 }
 
