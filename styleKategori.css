@@ -84,6 +84,13 @@ p {
   background-size: cover;
 }
 
+.banner-image5 {
+  /* background-image: url(img/gambar/gambar1.jpg); */
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url(TR_img/Gudeg.jpg);
+  background-size: cover;
+}
+
 .judul {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
