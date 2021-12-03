@@ -64,10 +64,8 @@
   padding-top: 300px;
 }
 
-.btn {
-  width: 125px;
-  height: 40px;
-  padding-top: 5px;
+.pesan {
+  padding: 8px 40px;
   background: #391e00;
   border-radius: 20px;
   font-size: 17px;
@@ -77,7 +75,7 @@
   text-decoration: none;
 }
 
-.btn:hover {
+.pesan:hover {
   background: white;
   color: rgb(238, 166, 84);
   text-decoration: none;
