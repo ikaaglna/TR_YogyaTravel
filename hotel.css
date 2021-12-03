@@ -64,7 +64,7 @@
   padding-top: 300px;
 }
 
-.btn {
+.btnPesan {
   width: 125px;
   height: 40px;
   padding-top: 5px;
@@ -76,7 +76,7 @@
   cursor: pointer;
 }
 
-.btn:hover {
+.btnPesan:hover {
   background: white;
   color: rgb(238, 166, 84);
   text-decoration: none;
