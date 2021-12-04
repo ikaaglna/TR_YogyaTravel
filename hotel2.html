@@ -8,20 +8,19 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 
-    <link rel="stylesheet" type="text/css" href="hotel.css">
-    <link rel="icon" type="image/png" href="images/Yogyakarta.png">
+    <link rel="stylesheet" type="text/css" href="hotel.css" />
+    <link rel="icon" type="image/png" href="images/Yogyakarta.png" />
 
     <title>Grand Mercure Yogyakarta Adi Sucipto</title>
-
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-d">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index Login.html">
           <img src="img/logo.png" alt="" height="30" />
         </a>
-        <a href="#" class="navbar-brand">YogyaTravel</a>
+        <a href="index Login.html" class="navbar-brand">YogyaTravel</a>
         <button type="button" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navbar">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -30,24 +29,79 @@
           <div class="mx-auto"></div>
           <ul class="ultext navbar-nav">
             <li class="nav-item">
-              <a href="#" class="nav-link text-white">Beranda</a>
+              <a href="index Login.html" class="nav-link text-white">Beranda</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Kategori</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li><a class="dropdown-item" href="kategori.html">Wisata</a></li>
-                <li><a class="dropdown-item" href="#">Kuliner</a></li>
+                <li><a class="dropdown-item" href="k_kuliner.html">Kuliner</a></li>
                 <li><a class="dropdown-item" href="#">Hotel</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link text-white">Tentang</a>
+              <a href="tentang.html" class="nav-link text-white">Tentang</a>
             </li>
+
+            <div class="dropdown text-end ms-2">
+              <a href="#" class="d-block link-light text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="img/profil.jpg" alt="mdo" width="32" height="32" class="rounded-circle" />
+              </a>
+              <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                <!-- <li><a class="dropdown-item" href="#">New project...</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li> -->
+                <li><a class="dropdown-item" href="#" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Profile</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="index.html">Keluar</a></li>
+              </ul>
+            </div>
           </ul>
         </div>
       </div>
     </nav>
     <!-- Akhir Navbar -->
+
+    <!-- Pop Up Profil -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="col-12">
+              <img src="img/profil.jpg" class="img-fluid img-thumbnail mx-auto d-block mb-3" alt="" style="border-radius: 50%; width: 150px; height: 150px" />
+            </div>
+            <div class="row">
+              <div class="col-3"></div>
+              <div class="col-2">
+                <h5>Nama</h5>
+              </div>
+              <div class="col-1"><h5>:</h5></div>
+              <div class="col-6">
+                <h5>Tami</h5>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-3"></div>
+              <div class="col-2">
+                <h5>Email</h5>
+              </div>
+              <div class="col-1"><h5>:</h5></div>
+              <div class="col-6">
+                <h5>Tami@gmail.com</h5>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Edit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Pop Up Profil -->
 
     <!-- Slide -->
     <div class="banner-image2 w-100 vh-100 d-flex">
@@ -60,81 +114,84 @@
       <div class="row tulisan">
         <div class="col">
           <p class="labelnya">Check In</p>
-          <input class="bulat" type="date" value="Check In Date">
+          <input class="bulat" type="date" value="Check In Date" />
         </div>
 
         <div class="col">
           <p class="labelnya">Check Out</p>
-          <input class="bulat" type="date" value="Check In Date">
-          
+          <input class="bulat" type="date" value="Check In Date" />
         </div>
 
         <div class="col">
           <p class="labelnya">Dewasa</p>
-          <input class="bulat" type="number" value="1">
-          
+          <input class="bulat" type="number" value="1" min="0" />
         </div>
 
         <div class="col">
           <p class="labelnya">Anak-anak</p>
-          <input class="bulat" type="number" value="1">
-          
+          <input class="bulat" type="number" value="1" min="0" />
         </div>
         <div class="col">
-          <br>
+          <br />
           <a href="#" class="btn">Pesan</a>
-          
         </div>
-        
-    </div>
-    </div>
-
-    <div class="container" >
-      <div class="row ikonnya">
-        <div class="col-2 d-flex justify-content-center">
-          <img width="120px" src="images/ikonPemandangan.png">
-        </div>
-  
-        <div class="col-2 d-flex justify-content-center">
-          <img width="38px" src="images/ikonTeras.png">
-        </div>
-    
-        <div class="col-2 d-flex justify-content-center">
-          <img width="40px" src="images/ikonWifi.png">
-        </div>
-  
-        <div class="col-2 d-flex justify-content-center">
-          <img width="70px" src="images/ikonParkir.png">
-        </div>
-  
-        <div class="col-2 d-flex justify-content-center">
-          <img width="33px" src="images/ikonAC.png">
-        </div>
-      
       </div>
     </div>
-    <br>
-    <h2 class="text-center fw-bold judul1" >Grand Mercure Yogyakarta Adi Sucipto</h2>
-    <p class="text-center"><span><img src="images/loc.png" id="loc"></span>  &ensp;Jl. Laksda Adi Sucipto No 80, Sleman 55281 Yogyakarta Yogyakarta</p><br><br>
+
+    <div class="container">
+      <div class="row ikonnya">
+        <div class="col-2 d-flex justify-content-center">
+          <img width="120px" src="images/ikonPemandangan.png" />
+        </div>
+
+        <div class="col-2 d-flex justify-content-center">
+          <img width="38px" src="images/ikonTeras.png" />
+        </div>
+
+        <div class="col-2 d-flex justify-content-center">
+          <img width="40px" src="images/ikonWifi.png" />
+        </div>
+
+        <div class="col-2 d-flex justify-content-center">
+          <img width="70px" src="images/ikonParkir.png" />
+        </div>
+
+        <div class="col-2 d-flex justify-content-center">
+          <img width="33px" src="images/ikonAC.png" />
+        </div>
+      </div>
+    </div>
+    <br />
+    <h2 class="text-center fw-bold judul1">Grand Mercure Yogyakarta Adi Sucipto</h2>
+    <p class="text-center">
+      <span><img src="images/loc.png" id="loc" /></span> &ensp;Jl. Laksda Adi Sucipto No 80, Sleman 55281 Yogyakarta Yogyakarta
+    </p>
+    <br /><br />
 
     <div class="container" align="center">
       <div class="row">
         <div class="col">
-          <img width="500" src="images/hotel/kamar2.jpg" class="img-fluid rounded">
+          <img width="500" src="images/hotel/kamar2.jpg" class="img-fluid rounded" />
         </div>
 
         <div class="col">
-          <p class="text-start">Nikmati kenyamanan seperti rumah sendiri di salah satu dari 305 kamar berpenyejuk udara yang dilengkapi dengan minibar dan televisi LED. Akses Internet nirkabel gratis siap menjamin koneksi, dan program satelit tersedia untuk hiburan. Kamar mandi pribadi dengan shower memiliki pengering rambut dan sandal. Kenyamanan meliputi telepon, serta brankas dan meja tulis. Nikmati fasilitas rekreasi seperti kolam renang outdoor dan pusat kebugaran. Hotel ini juga menyediakan akses Internet nirkabel gratis, layanan concierge, dan layanan pernikahan. Puaskan selera makan untuk makan siang atau makan malam di Purple, restoran yang memiliki spesialisasi masakan internasional, atau tetap tinggal di kamar dan manfaatkan layanan kamar 24 jam. Puaskan dahaga dengan minuman favorit di bar/lounge. Sarapan lengkap tersedia setiap hari mulai pukul 06:00 hingga 10:30 dengan biaya tambahan. Fasilitas unggulan antara lain pusat bisnis, koran gratis di lobi, dan laundry/dry cleaning. Antar-jemput ke bandara disediakan dengan biaya tambahan (tersedia 24 jam), dan parkir mandiri gratis juga tersedia di lokasi.</p>
-                     
+          <p class="text-start">
+            Nikmati kenyamanan seperti rumah sendiri di salah satu dari 305 kamar berpenyejuk udara yang dilengkapi dengan minibar dan televisi LED. Akses Internet nirkabel gratis siap menjamin koneksi, dan program satelit tersedia untuk
+            hiburan. Kamar mandi pribadi dengan shower memiliki pengering rambut dan sandal. Kenyamanan meliputi telepon, serta brankas dan meja tulis. Nikmati fasilitas rekreasi seperti kolam renang outdoor dan pusat kebugaran. Hotel ini
+            juga menyediakan akses Internet nirkabel gratis, layanan concierge, dan layanan pernikahan. Puaskan selera makan untuk makan siang atau makan malam di Purple, restoran yang memiliki spesialisasi masakan internasional, atau tetap
+            tinggal di kamar dan manfaatkan layanan kamar 24 jam. Puaskan dahaga dengan minuman favorit di bar/lounge. Sarapan lengkap tersedia setiap hari mulai pukul 06:00 hingga 10:30 dengan biaya tambahan. Fasilitas unggulan antara lain
+            pusat bisnis, koran gratis di lobi, dan laundry/dry cleaning. Antar-jemput ke bandara disediakan dengan biaya tambahan (tersedia 24 jam), dan parkir mandiri gratis juga tersedia di lokasi.
+          </p>
         </div>
       </div>
-    </div><br>
+    </div>
+    <br />
 
     <div class="container">
-      <p class="text-center">Tempat-tempat menarik yang populer di dekat hotel termasuk Tugu Yogyakarta berjarak 1,9 km dari Grand Mercure Yogyakarta, sedangkan Jalan Malioboro berjarak 3,1 km. Bandara Adisucipto terletak 4 km. </p>
+      <p class="text-center">Tempat-tempat menarik yang populer di dekat hotel termasuk Tugu Yogyakarta berjarak 1,9 km dari Grand Mercure Yogyakarta, sedangkan Jalan Malioboro berjarak 3,1 km. Bandara Adisucipto terletak 4 km.</p>
     </div>
-    
-    <br><br><br><br>
+
+    <br /><br /><br /><br />
     <!-- Akhir Slide -->
 
     <!-- Footer -->
@@ -257,10 +314,6 @@
       <!-- Akhir Copyright -->
     </footer>
     <!-- Akhir Footer -->
-
-    
-
-    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 

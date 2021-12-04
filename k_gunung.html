@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
 
     <title>Yogya Travel</title>
-    <link rel="icon" type="image/png" href="images/Yogyakarta.png">
-    <link rel="stylesheet" type="text/css" href=styleKategori.css>
-    
+    <link rel="icon" type="image/png" href="images/Yogyakarta.png" />
+    <link rel="stylesheet" type="text/css" href="styleKategori.css" />
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-d">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index Login.html">
           <img src="img/logo.png" alt="" height="30" />
         </a>
-        <a href="#" class="navbar-brand">YogyaTravel</a>
+        <a href="index Login.html" class="navbar-brand">YogyaTravel</a>
         <button type="button" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navbar">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -28,24 +27,79 @@
           <div class="mx-auto"></div>
           <ul class="ultext navbar-nav">
             <li class="nav-item">
-              <a href="#" class="nav-link text-white">Beranda</a>
+              <a href="index Login.html" class="nav-link text-white">Beranda</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Kategori</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li><a class="dropdown-item" href="kategori.html">Wisata</a></li>
-                <li><a class="dropdown-item" href="#">Kuliner</a></li>
+                <li><a class="dropdown-item" href="k_kuliner.html">Kuliner</a></li>
                 <li><a class="dropdown-item" href="#">Hotel</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link text-white">Tentang</a>
+              <a href="tentang.html" class="nav-link text-white">Tentang</a>
             </li>
+
+            <div class="dropdown text-end ms-2">
+              <a href="#" class="d-block link-light text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="img/profil.jpg" alt="mdo" width="32" height="32" class="rounded-circle" />
+              </a>
+              <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                <!-- <li><a class="dropdown-item" href="#">New project...</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li> -->
+                <li><a class="dropdown-item" href="#" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Profile</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="index.html">Keluar</a></li>
+              </ul>
+            </div>
           </ul>
         </div>
       </div>
     </nav>
     <!-- Akhir Navbar -->
+
+    <!-- Pop Up Profil -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="col-12">
+              <img src="img/profil.jpg" class="img-fluid img-thumbnail mx-auto d-block mb-3" alt="" style="border-radius: 50%; width: 150px; height: 150px" />
+            </div>
+            <div class="row">
+              <div class="col-3"></div>
+              <div class="col-2">
+                <h5>Nama</h5>
+              </div>
+              <div class="col-1"><h5>:</h5></div>
+              <div class="col-6">
+                <h5>Tami</h5>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-3"></div>
+              <div class="col-2">
+                <h5>Email</h5>
+              </div>
+              <div class="col-1"><h5>:</h5></div>
+              <div class="col-6">
+                <h5>Tami@gmail.com</h5>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Edit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Pop Up Profil -->
 
     <!-- Slide -->
     <div class="banner-image3 w-100 vh-100 d-flex justify-content-center align-items-center">
@@ -55,94 +109,99 @@
     </div>
     <!-- Akhir Slide -->
 
- 
-    <br><br>
-  <h2 class="kategori">Gunung</h2>
+    <br /><br />
+    <h2 class="kategori">Gunung</h2>
     <div class="container">
-      <hr class="hrJudul">
-      <hr class="hrJudul2">
+      <hr class="hrJudul" />
+      <hr class="hrJudul2" />
     </div>
-    <br><br>
-    
+    <br /><br />
 
     <div class="container" align="center">
-        <div class="row">
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-              <div class="paket">
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width: 18rem">
+            <div class="paket">
               <div class="ubah">
-                <img src="images/Gunung/Gunung merapi.png" class="gambar" alt="...">
+                <img src="images/Gunung/Gunung merapi.png" class="gambar" alt="..." />
                 <div class="card-body">
                   <p class="namaWisata fw-bold text-start">Gunung Merapi</p>
-                  <p class="text-start"><span><img src="images/loc.png" id="loc"></span>  &ensp;Lokasi : Kab. Sleman</p>
-                  <br>
+                  <p class="text-start">
+                    <span><img src="images/loc.png" id="loc" /></span> &ensp;Lokasi : Kab. Sleman
+                  </p>
+                  <br />
                 </div>
               </div>
               <a href="gunung1.html">
-              <div class="overlay overlayBlur">  
-                <div class="title_overlay fw-bold">Gunung Merapi</div>
-                <p fw-normal>Sleman</p>
-              </div>
+                <div class="overlay overlayBlur">
+                  <div class="title_overlay fw-bold">Gunung Merapi</div>
+                  <p fw-normal>Sleman</p>
+                </div>
               </a>
-              </div>
             </div>
-          </div>  
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-              <div class="paket">
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem">
+            <div class="paket">
               <div class="ubah">
-                <img src="images/Gunung/gunung ngalanggeran.jpg" class="gambar" alt="...">
+                <img src="images/Gunung/gunung ngalanggeran.jpg" class="gambar" alt="..." />
                 <div class="card-body">
                   <p class="namaWisata fw-bold text-start">Gunung Nglanggeran</p>
-                  <p class="text-start"><span><img src="images/loc.png" id="loc"></span>  &ensp;Lokasi : Desa Nglanggeran</p>
-                  <br>
+                  <p class="text-start">
+                    <span><img src="images/loc.png" id="loc" /></span> &ensp;Lokasi : Desa Nglanggeran
+                  </p>
+                  <br />
                 </div>
               </div>
               <a href="gunung2.html">
-              <div class="overlay overlayBlur">
-                <div class="title_overlay fw-bold">Gunung Nglanggeran</div>
-                <p fw-normal>Desa Nglanggeran</p>
-              </div>
+                <div class="overlay overlayBlur">
+                  <div class="title_overlay fw-bold">Gunung Nglanggeran</div>
+                  <p fw-normal>Desa Nglanggeran</p>
+                </div>
               </a>
-              </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-              <div class="paket">
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem">
+            <div class="paket">
               <div class="ubah">
-                <img src="images/Gunung/puncak becici.jpg" class="gambar" alt="...">
+                <img src="images/Gunung/puncak becici.jpg" class="gambar" alt="..." />
                 <div class="card-body">
                   <p class="namaWisata fw-bold text-start">Puncak Becici</p>
-                  <p class="text-start"><span><img src="images/loc.png" id="loc"></span>  &ensp;Lokasi : Dusun Gunung Cilik</p>
-                  <br>
+                  <p class="text-start">
+                    <span><img src="images/loc.png" id="loc" /></span> &ensp;Lokasi : Dusun Gunung Cilik
+                  </p>
+                  <br />
                 </div>
                 <a href="gunung3.html">
-                <div class="overlay overlayBlur">
-                  <div class="title_overlay fw-bold">Puncak Becici</div>
-                  <p fw-normal>Dusun Gunung Cilik</p>
-                </div>
+                  <div class="overlay overlayBlur">
+                    <div class="title_overlay fw-bold">Puncak Becici</div>
+                    <p fw-normal>Dusun Gunung Cilik</p>
+                  </div>
                 </a>
-              </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <br>
+    </div>
+    <br />
 
-
-      <div class="container" align="center">
-        <div class="row">
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-              <div class="paket">
-                <div class="ubah">
-                <img src="images/Gunung/gunung gentong2.jpg" class="gambar" alt="...">
+    <div class="container" align="center">
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width: 18rem">
+            <div class="paket">
+              <div class="ubah">
+                <img src="images/Gunung/gunung gentong2.jpg" class="gambar" alt="..." />
                 <div class="card-body">
                   <p class="namaWisata fw-bold text-start">Gunung Gentong</p>
-                  <p class="text-start"><span><img src="images/loc.png" id="loc"></span>  &ensp;Lokasi : Dusun Manggung</p>
-                  <br>
+                  <p class="text-start">
+                    <span><img src="images/loc.png" id="loc" /></span> &ensp;Lokasi : Dusun Manggung
+                  </p>
+                  <br />
                 </div>
                 <div class="overlay overlayBlur">
                   <div class="title_overlay fw-bold">Gunung Gentong</div>
@@ -150,17 +209,19 @@
                 </div>
               </div>
             </div>
-            </div>
-          </div>  
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-              <div class="paket">
-                <div class="ubah">
-                <img src="images/Gunung/gunung_ireng.jpg" class="gambar" alt="...">
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem">
+            <div class="paket">
+              <div class="ubah">
+                <img src="images/Gunung/gunung_ireng.jpg" class="gambar" alt="..." />
                 <div class="card-body">
-                  <p class="namaWisata fw-bold text-start">Gunung Ireng </p>
-                  <p class="text-start"><span><img src="images/loc.png" id="loc"></span>  &ensp;Lokasi : Kab. Gunung Kidul</p>
-                  <br>
+                  <p class="namaWisata fw-bold text-start">Gunung Ireng</p>
+                  <p class="text-start">
+                    <span><img src="images/loc.png" id="loc" /></span> &ensp;Lokasi : Kab. Gunung Kidul
+                  </p>
+                  <br />
                 </div>
                 <div class="overlay overlayBlur">
                   <div class="title_overlay fw-bold">Gunung Ireng</div>
@@ -168,97 +229,102 @@
                 </div>
               </div>
             </div>
-            </div>
           </div>
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-              <div class="paket">
-                <div class="ubah">
-                <img src="images/Gunung/gunung jaran.jpg" class="gambar" alt="...">
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem">
+            <div class="paket">
+              <div class="ubah">
+                <img src="images/Gunung/gunung jaran.jpg" class="gambar" alt="..." />
                 <div class="card-body">
                   <p class="namaWisata fw-bold text-start">Gunung Jaran</p>
-                  <p class="text-start"><span><img src="images/loc.png" id="loc"></span>  &ensp;Lokasi : Kab. Kulonprogo</p>
-                  <br>
+                  <p class="text-start">
+                    <span><img src="images/loc.png" id="loc" /></span> &ensp;Lokasi : Kab. Kulonprogo
+                  </p>
+                  <br />
                 </div>
                 <div class="overlay overlayBlur">
                   <div class="title_overlay fw-bold">Gunung jaran</div>
                   <p fw-normal>Kab. Kulonprogo</p>
                 </div>
-            </div>
-          </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <br>
-
-
+    </div>
+    <br />
 
     <div class="container" align="center">
       <div class="row">
         <div class="col">
-          <div class="card" style="width: 18rem;">
+          <div class="card" style="width: 18rem">
             <div class="paket">
-            <div class="ubah">
-              <img src="images/Gunung/gunung suroloyo.jpg" class="gambar" alt="...">
-              <div class="card-body">
-                <p class="namaWisata fw-bold text-start">Gunung Suroloyo </p>
-                <p class="text-start"><span><img src="images/loc.png" id="loc"></span>  &ensp;Lokasi :  Kab. Kulonprogo</p>
-                <br>
+              <div class="ubah">
+                <img src="images/Gunung/gunung suroloyo.jpg" class="gambar" alt="..." />
+                <div class="card-body">
+                  <p class="namaWisata fw-bold text-start">Gunung Suroloyo</p>
+                  <p class="text-start">
+                    <span><img src="images/loc.png" id="loc" /></span> &ensp;Lokasi : Kab. Kulonprogo
+                  </p>
+                  <br />
+                </div>
               </div>
-            </div>
-            <div class="overlay overlayBlur">
-              <div class="title_overlay fw-bold">Gunung Suroloyo </div>
-              <p fw-normal>Gunung Kidul</p>
-            </div>
-            </div>
-          </div>
-        </div>  
-        <div class="col">
-          <div class="card" style="width: 18rem;">
-            <div class="paket">
-            <div class="ubah">
-              <img src="images/Gunung/gunung ijo.jpg" class="gambar" alt="...">
-              <div class="card-body">
-                <p class="namaWisata fw-bold text-start">Gunung Ijo</p>
-                <p class="text-start"><span><img src="images/loc.png" id="loc"></span>  &ensp;Lokasi : Kab. Kulon Progo</p>
-                <br>
+              <div class="overlay overlayBlur">
+                <div class="title_overlay fw-bold">Gunung Suroloyo</div>
+                <p fw-normal>Gunung Kidul</p>
               </div>
-            </div>
-            <div class="overlay overlayBlur">
-              <div class="title_overlay fw-bold">Gunung Ijo</div>
-              <p fw-normal>Kulon Progo</p>
-            </div>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card" style="width: 18rem;">
+          <div class="card" style="width: 18rem">
             <div class="paket">
-            <div class="ubah">
-              <img src="images/Gunung/bukit turgo.jpg" class="gambar" alt="...">
-              <div class="card-body">
-                <p class="namaWisata fw-bold text-start">Bukit Turgo</p>
-                <p class="text-start"><span><img src="images/loc.png" id="loc"></span>  &ensp;Lokasi : Kab. Sleman</p>
-                <br>
+              <div class="ubah">
+                <img src="images/Gunung/gunung ijo.jpg" class="gambar" alt="..." />
+                <div class="card-body">
+                  <p class="namaWisata fw-bold text-start">Gunung Ijo</p>
+                  <p class="text-start">
+                    <span><img src="images/loc.png" id="loc" /></span> &ensp;Lokasi : Kab. Kulon Progo
+                  </p>
+                  <br />
+                </div>
               </div>
               <div class="overlay overlayBlur">
-                <div class="title_overlay fw-bold">Bukit Turgo</div>
-                <p fw-normal></p>
+                <div class="title_overlay fw-bold">Gunung Ijo</div>
+                <p fw-normal>Kulon Progo</p>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem">
+            <div class="paket">
+              <div class="ubah">
+                <img src="images/Gunung/bukit turgo.jpg" class="gambar" alt="..." />
+                <div class="card-body">
+                  <p class="namaWisata fw-bold text-start">Bukit Turgo</p>
+                  <p class="text-start">
+                    <span><img src="images/loc.png" id="loc" /></span> &ensp;Lokasi : Kab. Sleman
+                  </p>
+                  <br />
+                </div>
+                <div class="overlay overlayBlur">
+                  <div class="title_overlay fw-bold">Bukit Turgo</div>
+                  <p fw-normal></p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <br>
+      <br />
     </div>
 
+    <br /><br /><br />
 
-    <br><br><br>
-
-     <!-- Footer -->
-     <footer class="text-center text-lg-start mt-xl-5 pt-4">
+    <!-- Footer -->
+    <footer class="text-center text-lg-start mt-xl-5 pt-4">
       <div class="container-fluid p-4" style="background-color: #391e00">
         <div class="row">
           <!--Kolom Menu-->
@@ -377,8 +443,6 @@
       <!-- Akhir Copyright -->
     </footer>
     <!-- Akhir Footer -->
-
- 
 
     <!-- Js Bootsrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
